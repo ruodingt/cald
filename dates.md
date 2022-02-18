@@ -4,10 +4,11 @@
 
 ## Description
 
-We'd like to compute the number of days between two dates.
+We'd like to compute the number of days between two dates _from scratch_.
+I.e. without importing or otherwise building on existing packages for date processing.
 
-Despite the ominous XKCD comic above we're _not_ going to worry about times or time zones for this problem.
-Just regular [calendar](https://en.wikipedia.org/wiki/Gregorian_calendar) dates representable as a string like:
+Despite the ominous XKCD comic above we don't need to worry about times or time zones for this problem.
+Just the regular [calendar](https://en.wikipedia.org/wiki/Gregorian_calendar) and dates represented by strings of the form:
 `YYYY-MM-DD`
 
 For example, between `2012-01-01` and `2012-01-5` there are `3` days.
