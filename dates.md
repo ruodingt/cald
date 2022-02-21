@@ -31,17 +31,17 @@ If the order of two dates being compared is flipped the difference remains the s
 You should consider the possibility that malformed comparisons will be requested.
 To simplify the problem we've constrained the definition of a calendar date to those which may be represented as: `YYYY-MM-DD`.
 
-We leave it upto you how these are handled or not by your application.
+We leave it up-to you how these are handled or not by your application.
 
 Examples of invalid dates:
 
-- `"01-01-2020"`: not the expected format..
+- `"01-01-2020"`: not in the expected format..
 - `"20000-01-01"`: invalid under our definition of allowed years (`YYYY`)..
 - `"2022-02-29"`: format is not the only consideration for validity! 🤦‍♂️
 
 ## Solution shape
 
-Construct an application that lets you answer a few abitrary date comparison requests during the peer-review session.
+Construct an application that lets you answer a few arbitrary date comparison requests during the peer-review session.
 
 For example, a command line application which takes two dates via stdin and returns the difference via stdout before exiting.
 

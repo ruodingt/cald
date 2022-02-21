@@ -7,7 +7,7 @@ These are take-home problems for you to complete at your leisure in the same way
 
 We'll suggest a few different `mandatory` problems for you to choose from.
 
-You should complete atleast one of these as part of your submission. You can try more if you'd like to show off your skills, but a single problem done well is more than enough!
+You should complete at least one of these as part of your submission. You can try more if you'd like to show off your skills, but a single problem done well is more than enough!
 
 There's also a `bonus` problem you can take on if you're interested.
 
@@ -19,7 +19,7 @@ We'll provide you with a few specific github `@user` handles to share it with th
 ## Review session
 
 We run an interactive peer-review session to understand your solution.
-In this session we'll ask you to explain the problem, run a demo, and disuss your approach.
+In this session we'll ask you to explain the problem, run a demo, and discuss your approach.
 
 We might ask a followup question or two, for example:
 - How would you productionise your solution for environment `X`?
@@ -34,6 +34,6 @@ Treat this problem like you would a regular ticket.
 
 - Like many real-world problems, requirements may be ambiguous or incomplete. We're interested in how you deal with this ambiguity. Ask questions or make and document assumptions you find reasonable.
 
-- Show us your take on good software engineering practices! E.g. testing, documentation, reproducability, right-sized complexity for the problem, testing and testing
+- Show us your take on good software engineering practices! E.g. testing, documentation, reproducibility, packaging, right-sized complexity for the problem, testing and testing
 
-- Also, don't forget about testing.
+- Also, don't forget about testing!
