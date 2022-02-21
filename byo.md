@@ -6,7 +6,7 @@
 
 Had enough of the silly code tests companies cook up on a whim? We've got a problem for you.
 
-Send us some code you've already written that you're proud of.
+Send us some code _you've already written_ that you're proud of.
 
 ## What kind of code?
 
