@@ -39,5 +39,5 @@ docker run -it cald cald
 
 ```bash
 docker build -t cald .
-docker run -it cald coverage run -m pytest tests && coverage report
+docker run cald coverage run -m pytest tests && coverage report
 ```
