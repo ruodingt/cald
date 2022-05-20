@@ -15,6 +15,21 @@ class TestDate(unittest.TestCase):
         except Exception as e:
             assert type(e) == ValueError
 
+        try:
+            Date.from_string('01-01-2020')
+        except Exception as e:
+            assert type(e) == ValueError
+
+        try:
+            Date.from_string('20000-01-01')
+        except Exception as e:
+            assert type(e) == ValueError
+
+        try:
+            Date.from_string('2022-02-29')
+        except Exception as e:
+            assert type(e) == AssertionError
+
     def test_eq(self):
         assert Date(2002, 12, 1) == Date(2002, 12, 1)
 

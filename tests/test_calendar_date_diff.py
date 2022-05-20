@@ -10,8 +10,8 @@ class TestDateDiffFunction(unittest.TestCase):
         @return:
         """
         assert calendar_date_diff_str("2000-12-01", "2000-12-04", signed=False) == 2
-        assert calendar_date_diff_str("2001-1-3", "1999-3-5", signed=False) == 669
-        assert calendar_date_diff_str("1999-3-5", "2001-1-3", signed=False) == 669
-        assert calendar_date_diff_str("1999-3-5", "1999-3-4", signed=False) == 0
-        assert calendar_date_diff_str("1999-3-5", "1999-3-5", signed=False) == 0
-        assert calendar_date_diff_str("1999-3-5", "2020-1-3", signed=False) == 7608
+        assert calendar_date_diff_str("2001-01-03", "1999-03-05", signed=False) == 669
+        assert calendar_date_diff_str("1999-03-05", "2001-01-03", signed=False) == 669
+        assert calendar_date_diff_str("1999-03-05", "1999-03-04", signed=False) == 0
+        assert calendar_date_diff_str("1999-03-05", "1999-03-05", signed=False) == 0
+        assert calendar_date_diff_str("1999-03-05", "2020-01-03", signed=False) == 7608

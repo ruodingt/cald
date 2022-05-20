@@ -1,5 +1,6 @@
 import re
 from typing import Tuple, TypeVar
+
 T = TypeVar('T')
 
 
@@ -61,9 +62,12 @@ class Date:
 
         @raise ValueError: on mal-formatted input string
         """
-        pattern_discover = re.search(r'(\d+)-(\d+)-(\d+)', date_string)
+        pattern_discover = re.search(r'(\d{4})-(\d{2})-(\d{2})', date_string)
         if pattern_discover:
             y, m, d = pattern_discover.groups()
+            if len(y) != 4 or len(m) != 2 or len(d) != 2:
+                raise ValueError(f"Your input `{date_string}` is not a valid date string. "
+                                 f"Expecting strings like 'yyyy-mm-dd' e.g.(2021-02-03)")
             return Date(year=int(y), month=int(m), day=int(d))
         else:
             raise ValueError(f"Your input `{date_string}` is not a valid date string. "
