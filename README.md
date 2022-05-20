@@ -1,39 +1,43 @@
-# Harrison Tech Tasks
+# Calendar Difference
 
-This repo contains technical tasks that form part of the Harrison AI interview process.
-These are take-home problems for you to complete at your leisure in the same way you'd work on a real programming task.
+This library provide functionality to get differences between two days. 
+It can be used as a library or cli tools.
 
-## Choosing a problem
+For example:
 
-We'll suggest a few different `mandatory` problems for you to choose from.
+`"2012-01-10"` <-> `"2012-01-11"` = `0` days
 
-You should complete at least one of these as part of your submission. You can try more if you'd like to show off your skills, but a single problem done well is more than enough!
+`"2012-01-01"` <-> `"2012-01-10"` = `8` days
 
-There's also a `bonus` problem you can take on if you're interested.
+`"1801-06-13"` <-> `"1801-11-11"` = `150` days
 
-## Submitting your solution
+`"2021-12-01"` <-> `"2017-12-14"` = `1447` days
 
-Create a git repo containing your solution and push it to Github.
-We'll provide you with a few specific github `@user` handles to share it with the team you're working with.
 
-## Review session
+## Quick starts
+```python
+from caldiff.date import calendar_date_diff_str
+diff = calendar_date_diff_str("2000-12-01", "2000-12-04", signed=False)
+print(f"the difference is {diff} days")
+```
 
-We run an interactive peer-review session to understand your solution.
-In this session we'll ask you to explain the problem, run a demo, and discuss your approach.
+```bash
+cald --help
+cald --date1 2000-12-01 --date2 2000-12-04
+# or simply do following to run the cli in interaction mode
+cald
+```
 
-We might ask a followup question or two, for example:
-- How would you productionise your solution for environment `X`?
-- What changes about your solution if we change requirement `Y`?
-- What alternatives did you consider for design choice `Z`?
+Running with Docker
+```bash
+docker build -t cald .
+# do following to run the cli in interaction mode in container
+docker run -it cald cald
+```
 
-## What we look for
+## Testing
 
-Treat this problem like you would a regular ticket.
-
-- Make technology choices aligned to the requirements of your role (e.g. if Python is the lingua franca for your team it's a good choice for your implementation. But the choice is yours!)
-
-- Like many real-world problems, requirements may be ambiguous or incomplete. We're interested in how you deal with this ambiguity. Ask questions or make and document assumptions you find reasonable.
-
-- Show us your take on good software engineering practices! E.g. testing, documentation, reproducibility, packaging, right-sized complexity for the problem, testing and testing
-
-- Also, don't forget about testing!
+```bash
+docker build -t cald .
+docker run -it cald coverage run -m pytest tests && coverage report
+```
