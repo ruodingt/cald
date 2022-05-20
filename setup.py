@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'INSTRUCTIONS/README.md'), encoding='utf-8')
     long_description = f.read()
 
 setuptools.setup(
-    name='auto_template',
+    name='cald',
     version='0.1',
     description='A general utility package for BizAI.',
     long_description=long_description,
