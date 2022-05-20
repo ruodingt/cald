@@ -184,10 +184,11 @@ def _rearrange(a: T, b: T) -> Tuple[int, T, T]:
     """
     range arrange the order of a, b and produce the sign (1 or -1)
     if a >= b, the function will return 1, b, a
-    otherwise , return -1, a, b
+    otherwise (b>a) , return -1, a, b
+
     @param a:
     @param b:
-    @return:
+    @return: A tuple (Integer, T1, T2), where T2 >= T1 guaranteed
     """
     if a >= b:
         _sign = 1

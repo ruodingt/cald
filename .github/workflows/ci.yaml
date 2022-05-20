@@ -52,4 +52,4 @@ jobs:
           .
     - name: Run Tests
       run: |-
-        docker run "$REPOSITORY/$IMAGE:$GITHUB_SHA" pytest tests
+        docker run -it "$REPOSITORY/$IMAGE:$GITHUB_SHA" coverage run -m pytest tests && coverage report

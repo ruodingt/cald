@@ -1,6 +1,6 @@
 import unittest
 
-from caldiff.date import Date
+from caldiff.date import Date, _rearrange
 
 
 class TestDate(unittest.TestCase):
@@ -57,3 +57,9 @@ class TestDate(unittest.TestCase):
 
     def test_repr(self):
         assert str(Date(1900, 2, 3)) == 'DATE[1900-2-3]'
+
+
+class TestDateUtil(unittest.TestCase):
+    def test_rearrange(self):
+        assert _rearrange(3, 4) == (-1, 3, 4)
+        assert _rearrange(4, 3) == (1, 3, 4)
