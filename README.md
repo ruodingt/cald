@@ -1,4 +1,4 @@
-# Calendar Difference
+# Calendar Date Difference
 
 This library provide functionality to get differences between two days. 
 It can be used as a library or cli tools.
