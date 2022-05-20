@@ -15,9 +15,7 @@ For example:
 
 
 ## Quick starts
-
-Import as Python lib
-
+Install
 
 ```bash
 # clone this repo and then install
@@ -25,6 +23,8 @@ pip3 install .
 # alternatively install the latest dev branch
 pip3 install git+https://github.com/ruodingt/cald.git@develop
 ```
+
+Import as Python lib
 
 ```python
 from caldiff.date import calendar_date_diff_str
