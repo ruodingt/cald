@@ -15,12 +15,16 @@ For example:
 
 
 ## Quick starts
+
+Import as Python lib
+
 ```python
 from caldiff.date import calendar_date_diff_str
 diff = calendar_date_diff_str("2000-12-01", "2000-12-04", signed=False)
 print(f"the difference is {diff} days")
 ```
 
+Using CLI
 ```bash
 cald --help
 cald --date1 2000-12-01 --date2 2000-12-04
@@ -39,5 +43,5 @@ docker run -it cald cald
 
 ```bash
 docker build -t cald .
-docker run -it cald coverage run -m pytest tests && coverage report
+docker run cald bash run_test.sh
 ```
