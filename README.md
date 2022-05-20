@@ -1,5 +1,6 @@
 # Calendar Date Difference
 ![example workflow](https://github.com/ruodingt/cald/actions/workflows/ci.yaml/badge.svg)
+[![codecov](https://codecov.io/gh/ruodingt/cald/branch/develop/graph/badge.svg?token=3L1YMRWRXV)](https://codecov.io/gh/ruodingt/cald)
 
 This library provide functionality to get differences between two days. 
 It can be used as a library or cli tools.
