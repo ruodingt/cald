@@ -18,6 +18,14 @@ For example:
 
 Import as Python lib
 
+
+```bash
+# clone this repo and then install
+pip3 install .
+# alternatively install the latest dev branch
+pip3 install git+https://github.com/ruodingt/cald.git@develop
+```
+
 ```python
 from caldiff.date import calendar_date_diff_str
 diff = calendar_date_diff_str("2000-12-01", "2000-12-04", signed=False)
